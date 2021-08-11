@@ -5,7 +5,7 @@ function UseStateErrorEx() {
     let title = "random title"; // its initial value is random title
     const handleClick = (b) => {
         const promise = axios.post("http://localhost:4000/users", {
-            name: 'Pariwesh'
+            name: 'Nishant'
         }, {
             headers: {
                 ['content-type']: 'application/json'
@@ -30,7 +30,7 @@ function UseStateErrorEx() {
         <h2>{title}</h2>
 
         <button type="button" className="btn" onClick={handleClick} >
-            change title
+            send users
         </button>
         <button  className="btn" onClick={getUsers} >
            get users
