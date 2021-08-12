@@ -1,8 +1,12 @@
 import React from 'react'
 
-function Modal() {
+function Modal({ odalContent }) {
+
     return (
-        <> <h2>hello i am modal </h2>
+        <> <div className='modal'>
+            <p>I am modal</p>
+
+        </div>
         </>
 
     )
