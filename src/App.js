@@ -1,14 +1,11 @@
 import React from "react"
-import  Forms  from "./tutorial/Forms";
-
-
+import LearnJSON from "./tutorial/LearnJSON";
 
 function App() {
-  return (<div className='container'>
-    <Forms />
-    
-  
-  </div>
+  return (
+  <div className='container'>
+      <LearnJSON />
+       </div>
 
   );
 }
