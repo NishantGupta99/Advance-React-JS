@@ -1,10 +1,11 @@
 import React from "react"
-import LearnJSON from "./tutorial/LearnJSON";
+import Index from "./tutorial/Reducer/index";
 
 function App() {
   return (
   <div className='container'>
-      <LearnJSON />
+    
+      <Index />
        </div>
 
   );
