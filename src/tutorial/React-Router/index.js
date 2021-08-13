@@ -23,6 +23,7 @@ function ReactRouterDom() {
            <Route path="/people">
                 <People />
             </Route>
+            <Route path="/person/:id" children={<Person/>}></Route>
             <Route path="*"> {/* * means all the pages so no matter what route i select this page is going to be displayed */}
                 <Error />
             </Route>
