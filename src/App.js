@@ -1,10 +1,11 @@
 import React from "react"
-import PropDrilling from "./tutorial/Prop-Drilling"
+import ContextAPI from "./tutorial/Context";
+
 
 function App() {
   return (
     <div className='container'>
-      <PropDrilling />
+      <ContextAPI />
     </div>
   );
 }
