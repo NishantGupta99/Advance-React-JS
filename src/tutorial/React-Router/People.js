@@ -1,25 +1,19 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { data } from "../data";
 
 function People() {
-    const [people,setPeople] = useState(data);
+    const [people, setPeople] = useState(data);
     return (
         <div>
             <h1> People Page</h1>
             {people.map((person) => {
-                return ( 
+                return (
                     <div key={person.id} className="item">
                         <h4>{person.name}</h4>
-                   
-                   
                     </div>
-
-                );   
-                
+                );
             })}
-           
         </div>
-        
     )
 }
 

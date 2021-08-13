@@ -12,19 +12,22 @@ import { BrowserRouter as Router, Route, Switch  } from "react-router-dom"; // w
 function ReactRouterDom() {
     return (
         <Router>
+            <NavBar />
+            <Switch>
             <Route exact path="/">
                 <Home />
             </Route>
             <Route path="/about">
                 <About />
-            </Route>
-            <Route path="/error">
-                <Error />
-            </Route>
-            <Route path="/people">
+            </Route>            
+           <Route path="/people">
                 <People />
             </Route>
-          
+            <Route path="*"> {/* * means all the pages so no matter what route i select this page is going to be displayed */}
+                <Error />
+            </Route>
+
+            </Switch>   
         </Router>
     )
 }
